@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+</head>
+<body>
+    <h1>FreeCodeCamp Web Design</h1>
+    <p>This page is one of a series of pages intended to serve as a study guide and reference when I am creating final projects to earn the FreeCodeCamp Responsive Web Design certificate. The Web Design curriculum includes the following units:</p>
+    <ul>
+        <li>Basic HTML and HTML5</li>
+        <li>Basic CSS</li>
+        <li>Applied Visual Design</li>
+        <li>Applied Accessibility</li>
+        <li>Responsive Web Design Principles</li>
+        <li>CSS Flexbox</li>
+        <li>CSS Grid</li>
+    </ul>
+    <p>The HTML course is divided into three sections:</p>
+    <ul>
+        <li>Basic HTML Conventions</li>
+        <li>Basic HTML Elements</li>
+        <li>HTML5</li>
+    </ul>
+
+<section>
+    <h2>Basic HTML Conventions</h2>
+    <p>The course includes an in-browser text editor, so students can see well-formed code, structered so that lower-order elements are indented within higher-order elements. For example, li elements are indented (nested) within ul or ol elements. 
+    <h3>Well-structured Code</h3>
+    <p>The image below is a screenshot of code from a FreeCodeCamp lesson. Notice how the li elements are nested within the higher-order ul elements, as also the input and button elements are nested within the form element. And all are nested within the main element. I have used inline styling to size the image. In the CSS lesson we learn that inline styling is not the preferred method.</p>
+    <img style="width: 65%" src="Assets/Well-structuredCode.PNG">
+    <h3>Comments</h3>
+    <p>The course explains the value of commenting where a developer can use a comment to "comment out" a code block (prevent it from rendering). Here you can see an image of a block of code that has been commented out:</p>     
+    <img style="width: 85%" src="Assets/CommentOut.PNG">
+    <p>Notice in the screenshot below that the comment has been removed and the text which was green is now white. Developers use comments for that purpose and also to explain to someone who views their code what the code is doing, or to make notes to themselves, as you can see in the screenshot below:</p>
+    <img style="width: 85%" src="Assets/Comment.PNG">
+</section>
+<section>
+    <h2>Basic HTML Elements</h2>
+    <p>This page contains lessons from FreeCodeCamp's Basic HTML unit in the Web Design certificate curriculum. </p>
+    <p>Basic html elements include:</p>
+    <ul>
+        <li><a href="#headers">headers</a></li>
+        <li><a href="#paragraphs">paragraphs</a></li>
+        <li><a href="#lists">lists</a></li>
+        <li><a href="#images">images</a></li>
+        <li><a href="#links">links</a></li>
+        <li><a href="#forms">forms</a></li>
+    </ul>
+
+    <h3 id="headers">Headers</h3>
+    <p>Use the h element to create headers. There are six header elements. The browser will render these elements in decreasing font size from h1 to h6.</p>
+
+    <h3 id="paragraph">Paragraphs</h3>
+    <p>The p element is the basic element for text. Following the practice of typesetters, web designers use "lorem ipsum" (randomly scraped from a famous passage by Cicero) to create dummy paragraphs with placeholder text.</p>
+
+    <h3 id="lists">Lists</h3>
+    <p>Lists can be ordered or un-ordered (bullets). Wrap each item in li (list item) tags. Wrap un-ordered lists in ul (un-ordered list) tags, as in the example below: </p>
+    <ul>
+        <li>item one</li>
+        <li>item two</li>
+        <li>item three</li>       
+    </ul>
+    <p>Wrap ordered lists in ol (ordered list) tags, as in the example below:</p>
+    <ol>
+        <li>item one</li>
+        <li>item two</li>
+        <li>item three</li>   
+    </ol>
+
+    <h3 id="images">Images</h3>
+    <p>You can add images to your web page by using the img element. Use the src attribute to fetch them image file. The src value can be a url or it can be a path to a local file. Go to Well-structured Code to see a screenshot of code from a FreeCodeCamp lesson. The img tag is self-closing, so there is no closing tag, only a caret, as you can see in this screenshot:</p>
+    <img style="width: 75%" src="Assets/ImgTag.PNG">
+    <h3 id="links">Links</h3>
+    <p>You can use links to jump from your page to an external source or to jump to a bookmark within the same document. Use the anchor element (a) to create links. Use the href attribute to specify the url or bookmark to jump to.</p>
+
+    <h4>Bookmarks</h4>
+    <p>This page already includes multiple bookmark links. Each of the li elements in the Basic HTML elements list jumps to a bookmark anchor on this page. Notice that the href attribute value for the anchor must match the id value in the bookmark. Notice also that the a elements is nested within the li tags, so the links display in a bulleted list. Here is a screenshot showing the anchor element code and the code for one of the bookmarks (Headers):</p>
+    <img style="width: 55%" src="Assets/Bookmarks.PNG">
+
+    <h4>External Links</h4>
+    <p>The href attribute for <a href="https://freecodecamp.org">this link</a> is the url for FreeCodeCamp, so clicking the link will take you to that page. Below is a screenshot of the code.</p>
+    <img style="width: 85%" src="Assets/ExternalLink.PNG">    
+
+    <h4>Dead Link</h4>
+    <p>Developers somtimes use dead links (when you click nothing happens) as placeholders. Just replace the value of the href attribute with a hash. The FreeCodeCamp url in <a href="#!">this link</a> has been replaced with a hash, so when you click on it, nothing happens. Well, not really nothing. Clicking the link takes you to the top of the page. To prevent that, add text which does not correspond to a bookmark id. Here I've added a !. You can see the code below:</p>
+    <img style="width: 85%" src="Assets/DeadLink.PNG">
+
+    <h4>Blank Target</h4>
+    <p>You can use the target attribute set to the value "blank" to force the url to open in a new browser tab. You may have noticed that clicking the FreeCodeCamp url above in the External Links section opened the page in the same window, so you had to click the browser Back button to return to this page. Annoying. Try clicking on <a href="https://freecodecamp.org" target="blank">this link</a> and notice how the FreeCodeCamp page opens in a new browser window. That's better. Here's the code:</p> 
+    <img style="width: 85%" src="Assets/TargetBlank.PNG">
+
+    <h3 id="forms">Forms</h3>
+    <p>Forms can be used for many purposes, including gathering data from users. For illustration purposes, the function of this very simple form can be to vote for a favorite band. There's a lot to learn about how to create and structure forms, including how to create form elements such as input fields and buttons and how to require a field to be filled.</p>
+
+    <h3>Create a Form</h3>
+    <p>Use the action attribute with the form element to create a form inviting the user to submit data. This form collects the url of a YouTube video of the band. You can nest within the form element an input element with the type attribut value set to the value "text" and a placeholder attribute set to the value "bandname" text field where the user will enter the band's name.</p>
+    <form  action="/enter-band-YouTube">
+        <input type="text" required placeholder="bandname">
+    </form>
+    <p>You can view that code here:</p>
+    <img style="width: 85%" src="Assets/Form1.PNG">
+
+    <h3>Create Buttons</h3>
+    <p>You can also next within the form element a button element with the type attribute set to a "submit" value. You can also add the "required" attribute to the input element to require the user to enter text in the field before submitting the form.</p>
+    <form  action="/enter-band-YouTube">
+        <input type="text" required placeholder="bandname">
+        <button type="submit">Submit</button>
+    </form>
+    <h4>Input Element</h4>
+    <p>You can create groups of radio or checkbox buttons to collect information in a more directed manner than a text input field by setting the input attribute "type" to "radio" or "checkbox." You can create a group of buttons so the user makes one or more selections. For example, you could create a group of buttons so the user can select from among one or more groups of band traits. Let's designate two groups, "coolness" and "wanna dance." For every button in the "coolness" group, you would set the value of the name attribute to "coolness." You would then choose different indicators of coolness; let's say: hangdog, okay, most. Now set the id attribute accordingly, one button for each indicator. Finally, you will have to wrap the input elements in label elements to label each button. Best practices dictates adding the for attribute to the label element set to the same value as the input id attribute's value. So much more to learn about the input element. See here: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">Mozilla Developer Network web docs.</a>
+    <form  action="/enter-band-YouTube">
+       <label for="hangdog"></label><input id="hangdog" type="radio" name="coolness">hangdog</label>
+       <label for="okay"><input id="okay" type="radio" name="coolness">okay</label>
+       <label for="most"><input id="most" type="radio" name="coolness">most</label><br>
+        <input type="text" required placeholder="bandname">
+        <button type="submit">Submit</button>
+    </form>
+   <p>Your code for this simple form will look like this:</p>
+    <img style="width: 85% "src="Assets/FormCode.PNG">
+</section>
+<section>
+    <h2>HTML5</h2>
+    <p>Remember well-structured code? The idea of hierarchy extends to the overall structure of an HTML document. For purposes of Accessibility and Search Engine Optimization (SEO), the HTML5 adds descriptive tags. Already we had body and div to indicate sections of a document. HTML5 adds main, aside, article, and section elements to indicate sections. This document, for example, is divided into three sections that correspond to the h2 headings of Basic HTML Conventions, Basic HTML Elements, and HTML5. Header, footer,  and nav indicate sections associated with particular locations in the document, while video indicates a particular type of content. More on that later in the Accessibility lessons.</p>
+</section>
+</body>
+
+</html>

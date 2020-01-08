@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "WebDesign"
+		},
+		{
+			"name": "CodeCamp",
+			"path": "CodeCamp"
+		}
+	],
+	"settings": {
+		"editor.wordWrap": "on",
+		"liveServer.settings.multiRootWorkspaceName": "WebDesign"
+	}
+}
